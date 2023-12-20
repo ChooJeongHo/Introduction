@@ -35,9 +35,9 @@ class SignInActivity : AppCompatActivity() {
         btnSignIn.setOnClickListener {
             // id, pw 중 하나라도 입력되지 않았을 때, 로그인 버튼이 눌려져도 로그인이 되지 않음
             if (id.text.toString().isEmpty() || pw.text.toString().isEmpty()) {
-                Toast.makeText(this, "아이디/비밀번호를 확인해주세요", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, getString(R.string.toast_msg_signInError), Toast.LENGTH_SHORT).show()
             } else {
-                Toast.makeText(this, "로그인 성공", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, getString(R.string.toast_msg_signInSuccess), Toast.LENGTH_SHORT).show()
                 val intent = Intent(this, HomeActivity::class.java)
                 intent.putExtra("LoginId", id.text.toString())
                 startActivity(intent)
