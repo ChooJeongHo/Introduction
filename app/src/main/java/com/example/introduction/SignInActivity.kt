@@ -42,7 +42,7 @@ class SignInActivity : AppCompatActivity() {
             }
         }
 
-        // requestLauncher를 여기서 호출해야함
+        // requestLauncher를 여기서 호출해야함, signupActivity를 호출하면서 requestLauncher가 호출되어야함
         btnSignUp.setOnClickListener {
             val intent = Intent(this, SignUpActivity::class.java)
             requestLauncher.launch(intent)

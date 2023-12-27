@@ -81,7 +81,7 @@ class SignUpActivity : AppCompatActivity() {
                 val intent = Intent(this, SignInActivity::class.java)
                 intent.putExtra("SignUpId", etId.text.toString())
                 intent.putExtra("SignUpPw", etPw.text.toString())
-                setResult(RESULT_OK, intent)
+                setResult(RESULT_OK, intent)    // SignUpActivity에서 SignInActivity로 돌아갈 때, SignUpActivity에서 입력한 id, pw를 SignInActivity에 전달
                 finish()
             }
         }
