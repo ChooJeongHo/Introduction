@@ -21,4 +21,7 @@
     <string name="profile_finish">종료</string>
     <string name="toast_msg_signInError">아이디/비밀번호를 확인해주세요</string>
     <string name="toast_msg_signInSuccess">로그인 성공</string>
+    <string name="age">34</string>
+    <string name="developerName">추정호</string>
+    <string name="developerMBTI">ISTJ</string>
 </resources>

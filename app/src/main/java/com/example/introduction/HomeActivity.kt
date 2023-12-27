@@ -11,9 +11,9 @@ class HomeActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
 
-        val ivProfile = findViewById<ImageView>(R.id.ivProfile)
-        val profileId = findViewById<EditText>(R.id.etProfileId)
-        val btnFinish = findViewById<Button>(R.id.btnFinish)
+        val ivProfile = findViewById<ImageView>(R.id.iv_profile)
+        val profileId = findViewById<EditText>(R.id.et_profile_id)
+        val btnFinish = findViewById<Button>(R.id.btn_finish)
         val idData = intent.getStringExtra("LoginId")
 
         if (intent.hasExtra("LoginId")) {

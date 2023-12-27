@@ -3,8 +3,6 @@ package com.example.introduction
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.text.Editable
-import android.text.TextWatcher
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
@@ -16,12 +14,12 @@ class SignInActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_signin)
+        setContentView(R.layout.activity_sign_in)
 
-        val id = findViewById<EditText>(R.id.etSignInId)
-        val pw = findViewById<EditText>(R.id.etSignInPw)
-        val btnSignIn = findViewById<Button>(R.id.btnSignIn)
-        val btnSignUp = findViewById<Button>(R.id.btnSignUp)
+        val id = findViewById<EditText>(R.id.et_signIn_id)
+        val pw = findViewById<EditText>(R.id.et_signIn_pw)
+        val btnSignIn = findViewById<Button>(R.id.btn_signIn)
+        val btnSignUp = findViewById<Button>(R.id.btn_signUp)
 
         // SignUp에서 회원가입한 id, pw를 받아와서 자동으로 입력되도록 함
         requestLauncher = registerForActivityResult(ActivityResultContracts.StartActivityForResult()) {

@@ -9,8 +9,6 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
-import androidx.activity.result.ActivityResultLauncher
-import androidx.activity.result.contract.ActivityResultContracts
 
 class SignUpActivity : AppCompatActivity() {
 
@@ -18,13 +16,13 @@ class SignUpActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_sign_up)
 
-        val etName = findViewById<EditText>(R.id.etSignUpName)
-        val etId = findViewById<EditText>(R.id.etSignUpId)
-        val etPw = findViewById<EditText>(R.id.etSignUpPw)
-        val btnSign = findViewById<Button>(R.id.btnSign)
-        val nameErrorText = findViewById<TextView>(R.id.nameErrorText)
-        val idErrorText = findViewById<TextView>(R.id.idErrorText)
-        val pwErrorText = findViewById<TextView>(R.id.pwErrorText)
+        val etName = findViewById<EditText>(R.id.et_signUp_name)
+        val etId = findViewById<EditText>(R.id.et_signUp_id)
+        val etPw = findViewById<EditText>(R.id.et_signUp_pw)
+        val btnSign = findViewById<Button>(R.id.btn_sign)
+        val nameErrorText = findViewById<TextView>(R.id.name_error_text)
+        val idErrorText = findViewById<TextView>(R.id.id_error_text)
+        val pwErrorText = findViewById<TextView>(R.id.pw_error_text)
 
         // name, id, pw가 모두 입력 되었을 때만 회원가입 버튼이 눌려짐
         val textWatcher = object : TextWatcher {

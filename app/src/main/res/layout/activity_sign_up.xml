@@ -7,7 +7,7 @@
     tools:context=".SignUpActivity">
 
     <ImageView
-        android:id="@+id/ivSignUp"
+        android:id="@+id/iv_signUp"
         android:layout_width="130dp"
         android:layout_height="130dp"
         android:layout_marginTop="32dp"
@@ -17,17 +17,17 @@
         android:src="@drawable/human" />
 
     <TextView
-        android:id="@+id/tvSignUpName"
+        android:id="@+id/tv_signUp_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginTop="64dp"
         android:text="@string/signUp_name"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ivSignUp" />
+        app:layout_constraintTop_toBottomOf="@+id/iv_signUp" />
 
     <EditText
-        android:id="@+id/etSignUpName"
+        android:id="@+id/et_signUp_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
@@ -36,30 +36,30 @@
         android:inputType="text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvSignUpName" />
+        app:layout_constraintTop_toBottomOf="@+id/tv_signUp_name" />
 
     <TextView
-        android:id="@+id/nameErrorText"
+        android:id="@+id/name_error_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:textColor="#FF0000"
         android:visibility="gone"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etSignUpName"/>
+        app:layout_constraintTop_toBottomOf="@+id/et_signUp_name"/>
 
     <TextView
-        android:id="@+id/tvSignUpId"
+        android:id="@+id/tv_signUp_id"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginTop="16dp"
         android:text="@string/signUp_id"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/nameErrorText" />
+        app:layout_constraintTop_toBottomOf="@+id/name_error_text" />
 
     <EditText
-        android:id="@+id/etSignUpId"
+        android:id="@+id/et_signUp_id"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
@@ -68,30 +68,30 @@
         android:inputType="text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvSignUpId" />
+        app:layout_constraintTop_toBottomOf="@+id/tv_signUp_id" />
 
     <TextView
-        android:id="@+id/idErrorText"
+        android:id="@+id/id_error_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:textColor="#FF0000"
         android:visibility="gone"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etSignUpId"/>
+        app:layout_constraintTop_toBottomOf="@+id/et_signUp_id"/>
 
     <TextView
-        android:id="@+id/tvSignUpPw"
+        android:id="@+id/tv_signUp_pw"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginTop="16dp"
         android:text="@string/signUp_pw"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/idErrorText" />
+        app:layout_constraintTop_toBottomOf="@+id/id_error_text" />
 
     <EditText
-        android:id="@+id/etSignUpPw"
+        android:id="@+id/et_signUp_pw"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
@@ -100,20 +100,20 @@
         android:inputType="textPassword"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvSignUpPw" />
+        app:layout_constraintTop_toBottomOf="@+id/tv_signUp_pw" />
 
     <TextView
-        android:id="@+id/pwErrorText"
+        android:id="@+id/pw_error_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:textColor="#FF0000"
         android:visibility="gone"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etSignUpPw"/>
+        app:layout_constraintTop_toBottomOf="@+id/et_signUp_pw"/>
 
     <Button
-        android:id="@+id/btnSign"
+        android:id="@+id/btn_sign"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
@@ -122,5 +122,5 @@
         android:text="@string/signUp_signUp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etSignUpPw" />
+        app:layout_constraintTop_toBottomOf="@+id/et_signUp_pw" />
 </androidx.constraintlayout.widget.ConstraintLayout>
